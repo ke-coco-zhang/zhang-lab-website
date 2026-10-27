@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhang Lab | Team & Mentorship</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Zhang Lab <span>@ UW-Madison</span></div>
+        <button class="mobile-menu-btn" aria-label="Toggle menu" style="display: none;">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <style>@media(max-width:768px){.mobile-menu-btn{display:block!important}}</style>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="research.html">Research</a>
+            <a href="team.html" class="active">Team & Mentorship</a>
+            <a href="publications.html">Publications</a>
+            <a href="news.html">News</a>
+            <a href="join.html" class="cta">Join the Lab</a>
+        </div>
+    </nav>
+    <script>
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+
+    <header class="page-header">
+        <h1>Mentorship & Team</h1>
+        <p>Building independent scientists in a collaborative, high-energy environment.</p>
+    </header>
+
+    <section class="container">
+        <img src="images/group_photo_2025.jpg" alt="Zhang Lab group illustration" style="width: 100%; max-height: 300px; object-fit: contain; border-radius: 12px; margin-bottom: 50px; background-color: var(--card-bg); padding: 20px; border-bottom: 3px solid var(--accent-cyan);">
+
+        <h2>Principal Investigator</h2>
+        <div class="pi-hero">
+            <div class="member-card pi-card">
+                <img src="images/people_headphotos/Zhang.jpg" alt="Ke Zhang" class="member-img">
+                <div class="member-info">
+                    <h3 class="pi-name">Prof. Ke (Coco) Zhang</h3>
+                    <p class="pi-title">Associate Professor of Astronomy</p>
+                    <p style="margin-top:10px;"><a href="files/KeZhang_CV.pdf" class="pi-cv-link" target="_blank" rel="noopener">View CV</a></p>
+                </div>
+            </div>
+            <div class="mentorship-quote pi-quote">
+                "My goal is to train the next generation of leaders in astronomy. In my lab, you are treated as a core collaborator from day one. We work together on the bleeding edge of observations to answer fundamental questions."
+            </div>
+        </div>
+
+        <h2 style="text-align: center; margin-bottom: 40px; text-transform: uppercase; color: var(--text-primary);">Student Success Stories</h2>
+        <div class="success-stories-grid">
+            <div class="success-card">
+                <h3>Undergraduate Leads</h3>
+                <p>Our undergrads don't just do busywork. They analyze ALMA data. Recent students have been <span class="highlight-text">lead authors on ApJ papers</span> and presented at national AAS conferences.</p>
+            </div>
+            <div class="success-card">
+                <h3>Award-Winning Fellows</h3>
+                <p>We provide strong mentorship for fellowship applications. Multiple group members have successfully secured prestigious awards like the <span class="highlight-text">NSF GRFP</span>.</p>
+            </div>
+            <div class="success-card">
+                <h3>Career Launchpad</h3>
+                <p>We prepare you for the next step. Our alumni have gone on to top graduate programs.</p>
+            </div>
+        </div>
+
+
+        <h2 style="margin-top: 80px;">Postdoctoral Fellow & Visiting Scientist</h2>
+        <div class="team-grid">
+            <div class="member-card">
+                <img src="images/people_headphotos/Abby.png" class="member-img" alt="Abby Waggoner">
+                <div class="member-info">
+                    <h3>Abby Waggoner</h3>
+                    <p>Postdoctoral Fellow, <span class="highlight-text">NSF Postdoctoral Fellowship</span></p>
+                    <p><a href="https://www.abygailrwaggoner.com" class="member-website-link" target="_blank" rel="noopener">Personal Website</a></p>
+                </div>
+            </div>
+            <div class="member-card">
+                <img src="images/people_headphotos/Eric_Van_Clepper.jpg" class="member-img" alt="Eric Van Clepper">
+                <div class="member-info">
+                    <h3>Eric Van Clepper</h3>
+                    <p>Postdoctoral Fellow, <span class="highlight-text">WiCOR Postdoctoral Fellowship</span></p>
+                    <p><a href="https://www.ericvc.com" class="member-website-link" target="_blank" rel="noopener">Personal Website</a></p>
+                </div>
+            </div>
+            <div class="member-card">
+                <img src="images/people_headphotos/Nick.avif" class="member-img" alt="Nick Ballering">
+                <div class="member-info">
+                    <h3>Nick Ballering</h3>
+                    <p>Visiting Scientist</p>
+                    <p><a href="https://www.nickballering.com" class="member-website-link" target="_blank" rel="noopener">Personal Website</a></p>
+                </div>
+            </div>
+        </div>
+
+        <h2 style="margin-top: 70px;">Graduate Students</h2>
+        <div class="team-grid">
+            <div class="member-card">
+                <img src="images/people_headphotos/Estephani.jpg" class="member-img" alt="Estephani TorresVillanueva">
+                <div class="member-info">
+                    <h3>Estephani TorresVillanueva</h3>
+                    <p>PhD Candidate, <span class="highlight-text">NSF GRFP</span></p>
+                    <!-- No personal website for undergraduate students -->
+                </div>
+            </div>
+            <div class="member-card">
+                <img src="images/people_headphotos/Tayt.png" class="member-img" alt="Tayt Armitage">
+                <div class="member-info">
+                    <h3>Tayt Armitage</h3>
+                    <p>Graduate Student, <span class="highlight-text">NSF GRFP, WSGC Graduate Fellowship</span></p>
+                    <!-- No personal website for undergraduate students -->
+                </div>
+            </div>
+            <div class="member-card">
+                <img src="images/people_headphotos/Eshan.jpg" class="member-img" alt="Eshan Raul">
+                <div class="member-info">
+                    <h3>Eshan Raul</h3>
+                    <p>Graduate Student, <span class="highlight-text">WSGC Graduate Fellowship</span></p>
+                    <!-- No personal website for undergraduate students -->
+                </div>
+            </div>
+        </div>
+
+        <h2 style="margin-top: 70px;">Undergraduate Researchers</h2>
+        <div class="team-grid">
+            <div class="member-card">
+                <img src="images/people_headphotos/Carl_Yao.jpg" class="member-img" alt="Carl Yao">
+                <div class="member-info">
+                    <h3>Carl Yao</h3>
+                    <p>Undergraduate Researcher</p>
+
+                    <p><span class="highlight-text">Sophomore fellowship, <a href="https://scixplorer.org/abs/2026ApJ..1005...70Y/abstract" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">First-author ApJ paper</a></span></p>
+                </div>
+            </div>
+            <div class="member-card">
+                <img src="images/people_headphotos/Nick_Tallon.jpg" class="member-img" alt="Nick Tallon">
+                <div class="member-info">
+                    <h3>Nick Tallon</h3>
+                    <p>Undergraduate Researcher</p>
+                    
+                    <p><span class="highlight-text">Sophomore fellowship, Peter Livingston Scholarship, WSGC Undergraduate Fellowship</span></p>
+                </div>
+            </div>
+            <div class="member-card">
+                <img src="images/people_headphotos/Alonzo_Ma.png" class="member-img" alt="Alonzo Ma">
+                <div class="member-info">
+                    <h3>Alonzo Ma</h3>
+                    <p>Undergraduate Researcher</p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <h2 style="margin-top: 80px;">Group Alumni</h2>
+    <div class="team-grid">
+            <div class="success-card" style="padding: 20px;">
+                <h3 style="font-size: 1.1rem; margin-bottom: 5px; color: var(--text-primary);">Nina Weichmann (Undergrad)</h3>
+                <p style="font-size: 0.9rem;">Now Master student at CU Boulder</p>
+                <p style="font-size: 0.85rem; color: var(--accent-orange);">WSGC Undergraduate Fellowship, Doherty Award</p>
+            </div>
+            <div class="success-card" style="padding: 20px;">
+                <h3 style="font-size: 1.1rem; margin-bottom: 5px; color: var(--text-primary);">Leon Trapman (Postdoc)</h3>
+                <p style="font-size: 0.9rem;">Now at a data science company in the Netherlands</p>
+            </div>
+            <div class="success-card" style="padding: 20px;">
+                <h3 style="font-size: 1.1rem; margin-bottom: 5px; color: var(--text-primary);">Ella Chevalier (Undergrad)</h3>
+                <p style="font-size: 0.9rem;">Now PhD student at UC Berkeley</p>
+                <p style="font-size: 0.85rem; color: var(--accent-orange);">Sophomore Fellowship, Doherty Award, <a href="https://scixplorer.org/abs/2026ApJ..1005..199C/abstract" target="_blank" rel="noopener" style="color: inherit; text-decoration: underline;">First-author ApJ paper</a></p>
+            </div>
+             <div class="success-card" style="padding: 20px;">
+                <h3 style="font-size: 1.1rem; margin-bottom: 5px; color: var(--text-primary);">Vicki Braianova (Undergrad)</h3>
+                <p style="font-size: 0.9rem;">Now Master student at Autonomous Univ. of Madrid</p>
+                <p style="font-size: 0.85rem; color: var(--accent-orange);">Sophomore Fellowship</p>
+            </div>
+            <div class="success-card" style="padding: 20px;">
+                <h3 style="font-size: 1.1rem; margin-bottom: 5px; color: var(--text-primary);">Ben Trapistrant (Undergrad)</h3>
+                <p style="font-size: 0.9rem;">Now PhD student at University of Florida</p>
+            </div>
+             <div class="success-card" style="padding: 20px;">
+                <h3 style="font-size: 1.1rem; margin-bottom: 5px; color: var(--text-primary);">Matt Kalscheur (Undergrad)</h3>
+                <p style="font-size: 0.9rem;">Now PhD student at CU Boulder</p>
+            </div>
+             <div class="success-card" style="padding: 20px;">
+                <h3 style="font-size: 1.1rem; margin-bottom: 5px; color: var(--text-primary);">Olive Zhang (Undergrad)</h3>
+                <p style="font-size: 0.9rem;">Now PhD student at WashU St. Louis</p>
+            </div>
+             <div class="success-card" style="padding: 20px;">
+                <h3 style="font-size: 1.1rem; margin-bottom: 5px; color: var(--text-primary);">Leopold Hutnik (Postbac)</h3>
+                <p style="font-size: 0.9rem;">Now PhD student at NMSU</p>
+            </div>
+             <div class="success-card" style="padding: 20px;">
+                <h3 style="font-size: 1.1rem; margin-bottom: 5px; color: var(--text-primary);">Anna Conly (REU)</h3>
+                <p style="font-size: 0.9rem;">Now PhD student at NMSU</p>
+            </div>
+             <div class="success-card" style="padding: 20px;">
+                <h3 style="font-size: 1.1rem; margin-bottom: 5px; color: var(--text-primary);">Caroline Wraneschetz (REU)</h3>
+                <p style="font-size: 0.9rem;"></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Zhang Group @ University of Wisconsin-Madison</p>
+    </footer>
+
+</body>
+</html>

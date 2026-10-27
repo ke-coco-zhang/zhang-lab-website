@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhang Lab | Join Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Zhang Lab <span>@ UW-Madison</span></div>
+        <button class="mobile-menu-btn" aria-label="Toggle menu" style="display: none;">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <style>@media(max-width:768px){.mobile-menu-btn{display:block!important}}</style>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="research.html">Research</a>
+            <a href="team.html">Team</a>
+            <a href="publications.html">Publications</a>
+            <a href="news.html">News</a>
+            <a href="join.html" class="active cta">Join Us</a>
+        </div>
+    </nav>
+    <script>
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+
+    <header class="page-header">
+        <h1>Join the Lab</h1>
+        <p style="color: var(--text-secondary);">Opportunities for students and postdocs.</p>
+    </header>
+
+    <section class="container join-content">
+        <div class="join-text">
+            <h2 style="color: var(--accent-cyan);">Why Join Us?</h2>
+            <p>We provide a supportive and collaborative environment for young scientists to investigate big questions in planet formation. Group members have direct access to cutting-edge data from ALMA and JWST.</p>
+            <p>We value independence, creativity, and open communication. We strongly support our students in applying for fellowships (e.g., NSF GRFP) and attending conferences.</p>
+            
+            <h2 style="color: var(--accent-cyan); margin-top: 40px;">How to Apply</h2>
+            <p>Please send an email to Prof. Zhang with the following:</p>
+            <ul class="checklist" style="color: var(--text-secondary);">
+                <li>Your CV / Resume</li>
+                <li>A brief statement of your research interests and why you want to join our group.</li>
+                <li>(For undergrads) Unofficial transcript.</li>
+            </ul>
+            <a href="mailto:ke.zhang@wisc.edu" class="btn" style="margin-top: 20px;">✉️ Email Prof. Zhang</a>
+
+            
+        </div>
+
+        <div class="join-sidebar">
+            <h3>Current Openings</h3>
+            <div style="margin-top: 20px;">
+                <h4 style="margin-bottom: 10px; color: var(--accent-orange);">🎓 Graduate Students</h4>
+                <p style="font-size: 0.9rem; color: var(--text-secondary);">We are recruiting graduate students to start in Fall 2027.</p>
+            </div>
+            <div style="margin-top: 30px;">
+                <h4 style="margin-bottom: 10px; color: var(--accent-orange);">🔭 Undergrad Researchers</h4>
+                <p style="font-size: 0.9rem; color: var(--text-secondary);">We are not recruiting undergraduate researchers during Prof. Zhang's sabbatical (September 2026 &ndash; August 2027). Please check back in Fall 2027.</p>
+            </div>
+            <div style="margin-top: 30px;">
+                <h4 style="margin-bottom: 10px; color: var(--accent-orange);">🌟 Postdoctoral Opportunities</h4>
+                <p style="font-size: 0.9rem; color: var(--text-secondary);">
+                    UW–Madison hosts <strong><a href="https://www.stsci.edu/stsci-research/fellowships/nasa-hubble-fellowship-program" target="_blank" rel="noopener">NASA Hubble Fellows</a></strong> and <strong><a href="https://www.hsfoundation.org/programs/science/51-pegasi-b-fellowship/" target="_blank" rel="noopener">51 Pegasi b Fellows</a></strong>.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Zhang Group @ University of Wisconsin-Madison</p>
+    </footer>
+
+</body>
+</html>

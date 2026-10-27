@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhang Lab | Research & Tools</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Zhang Lab <span>@ UW-Madison</span></div>
+        <button class="mobile-menu-btn" aria-label="Toggle menu" style="display: none;">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <style>@media(max-width:768px){.mobile-menu-btn{display:block!important}}</style>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="research.html" class="active">Research</a>
+            <a href="team.html">Team & Mentorship</a>
+            <a href="publications.html">Publications</a>
+            <a href="news.html">News</a>
+            <a href="join.html" class="cta">Join the Lab</a>
+        </div>
+    </nav>
+    <script>
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
+    </script>
+
+    <header class="page-header">
+        <h1>Our Science & Tools</h1>
+        <p>We are observers first. Decoding the physics and chemistry of planet formation using the world's most powerful facilities.</p>
+    </header>
+
+    <section class="container">
+        <div class="data-sources-bar">
+            <div class="data-source">
+                <img src="images/alma-logo.png" alt="ALMA logo" class="data-source-logo"> 
+                <span>ALMA</span>Sub-mm Interferometry</div>
+            <div class="data-source">
+                <img src="images/jwst_logo.jpg" alt="JWST logo" class="data-source-logo"> 
+                <span>JWST</span>
+                Mid-IR Spectroscopy
+            </div>
+            <div class="data-source">
+                <img src="images/computing_logo.png" alt="Computing logo" class="data-source-logo"> 
+                <span>Computing</span>
+                Physical and Chemical Modeling
+            </div>
+
+            
+        </div>
+
+        <div class="cards-grid">
+            <div class="card">
+                <div class="card-icon" style="color: var(--accent-orange); font-size: 2.5rem;">01.</div>
+                <h3>Imaging Planet Birthplaces</h3>
+                <p>We are <span class="highlight-text">Principal Investigators</span> of multiple programs on ALMA and JWST. We use interferometry to capture high-resolution images of rings, gaps, and spirals carved by newborn planets.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon" style="color: var(--accent-orange); font-size: 2.5rem;">02.</div>
+                <h3>Tracking Volatile Chemistry</h3>
+                <p>Using JWST and ALMA, we map the distribution of water, CO, and organic molecules to understand the chemical inventory available for forming habitable worlds.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon" style="color: var(--accent-orange); font-size: 2.5rem;">03.</div>
+                <h3>Connecting Data to Models</h3>
+                <p>We bridge the gap between observations and physical and chemical evolution in planet formation. We use sophisticated physical and chemical models (e.g., DALI) and radiative transfer codes (e.g., RADMC-3D) to translate photons into insights on physical and chemical processes in planet formation.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" style="padding-top: 80px;">
+        <h2 style="text-align: center; margin-bottom: 50px; text-transform: uppercase; color: var(--text-primary);">Active Projects</h2>
+
+        <div class="project-card" style="display: flex; gap: 30px; background: var(--card-bg); padding: 30px; border-radius: 12px; margin-bottom: 25px; border-left: 4px solid var(--accent-cyan);">
+            <img src="images/ALMA-AGE-PRO-S-Dagnello-2025-protoplanetary-disk-936x600.png" alt="AGE-PRO protoplanetary disk" style="width: 220px; height: 160px; object-fit: contain; border-radius: 8px; flex-shrink: 0; background-color: #111;">
+            <div>
+                <h3 style="color: var(--accent-cyan); margin-bottom: 10px;">AGE-PRO: Gas Evolution in Protoplanetary Disks</h3>
+                <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+                    Our flagship ALMA Large Program (103 hours) answers a fundamental question: how long do planet-forming disks retain their gas? We measure gas masses and sizes across 30 disks spanning 0.1–10 Myr in three star-forming regions.
+                </p>
+                <p style="margin-top: 12px; font-size: 0.9rem;"><span style="color: var(--accent-orange);">Status:</span> 12 papers published in 2025 ApJ Focus Issue</p>
+                <a href="https://agepro.das.uchile.cl" target="_blank" style="color: var(--accent-cyan); font-size: 0.9rem;">Project Website →</a>
+                <span style="color: var(--text-secondary); margin: 0 10px;">|</span>
+                <a href="https://ke-coco-zhang.github.io/agepro-website/" target="_blank" style="color: var(--accent-cyan); font-size: 0.9rem;">Data Download →</a>
+            </div>
+        </div>
+
+        <div class="project-card" style="display: flex; gap: 30px; background: var(--card-bg); padding: 30px; border-radius: 12px; margin-bottom: 25px; border-left: 4px solid var(--accent-orange);">
+            <img src="images/JDISCS.png" alt="JWST disk spectrum" style="width: 220px; height: 160px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
+            <div>
+                <h3 style="color: var(--accent-orange); margin-bottom: 10px;">JDISC Survey: Inner Disk Chemistry with JWST</h3>
+                <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+                    Using JWST/MIRI mid-infrared spectroscopy, we probe the chemistry at terrestrial planet-forming zones (< 10 AU). We detect water, CO₂, and organic molecules to understand the chemical inventory available for rocky planet formation.
+                </p>
+                <p style="margin-top: 12px; font-size: 0.9rem;"><span style="color: var(--accent-orange);">Status:</span> Observations ongoing</p>
+                <a href="https://sites.google.com/view/jdiscs/team/" target="_blank" style="color: var(--accent-orange); font-size: 0.9rem;">Project Website →</a>
+            </div>
+        </div>
+
+        <div class="project-card" style="display: flex; gap: 30px; background: var(--card-bg); padding: 30px; border-radius: 12px; margin-bottom: 25px; border-left: 4px solid var(--accent-cyan);">
+            <img src="images/Oph_JWST.png" alt="Embedded disk" style="width: 220px; height: 160px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
+            <div>
+                <h3 style="color: var(--accent-cyan); margin-bottom: 10px;"> Chemistry in the first million years of planet formation</h3>
+                <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+                    Our newest JWST program (68.5 hours, approved 2025) targets the youngest planet-forming disks still embedded in their natal envelopes. We aim to understand chemistry in the first million years of planet formation.
+                </p>
+                <p style="margin-top: 12px; font-size: 0.9rem;"><span style="color: var(--accent-orange);">Status:</span> Approved, observations upcoming</p>
+            </div>
+        </div>
+
+        <div class="project-card" style="display: flex; gap: 30px; background: var(--card-bg); padding: 30px; border-radius: 12px; margin-bottom: 25px; border-left: 4px solid var(--accent-orange);">
+            <img src="images/pebbledrift.jpg" alt="Pebble drift diagram" style="width: 220px; height: 160px; object-fit: cover; border-radius: 8px; flex-shrink: 0;">
+            <div>
+                <h3 style="color: var(--accent-orange); margin-bottom: 10px;">Water & Pebble Drift</h3>
+                <p style="color: var(--text-secondary); font-size: 0.95rem; line-height: 1.6;">
+                    How does water reach the inner disk where rocky planets form? We use molecular tracers to track the radial transport of icy pebbles and understand how disk substructures regulate volatile delivery to habitable zones.
+                </p>
+                <p style="margin-top: 12px; font-size: 0.9rem;"><span style="color: var(--accent-orange);">Status:</span> Active research</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Zhang Group @ University of Wisconsin-Madison</p>
+    </footer>
+
+</body>
+</html>

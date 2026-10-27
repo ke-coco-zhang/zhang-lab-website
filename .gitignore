@@ -1,0 +1,8 @@
+# macOS / editor
+.DS_Store
+.claude/
+
+# Local-only tools: these contain a private ADS/SciX API token. Never commit.
+ads-loader.js
+local_generator.html
+publications_auto.html
